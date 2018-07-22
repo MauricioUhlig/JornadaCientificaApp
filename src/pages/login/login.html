@@ -1,0 +1,41 @@
+<div id="custom-overlay"  [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img class="circleImageBig" src="assets/imgs/spin.png">
+    <img class="circleImage" src="assets/imgs/spin.png">
+    <img class="lampImage" src="assets/imgs/lamp.png"> 
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-content padding class="home-background">
+  <br><br><br>
+  <img style="height:auto;" src="assets/imgs/imgMain.png">
+  <br><br><br>
+  <ion-list no-lines padding-top> 
+    <ion-item style="background:#fff ">
+      <ion-input type="text" name="email" placeholder="Email" [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item style="background:#fff ">
+      <ion-input type="password" name="password" placeholder="Senha" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <br/>
+    <button ion-button round block color="primary" (click)="login(user)">Entrar</button>
+  </ion-list>
+
+  <div>  
+    <button ion-button block style="color:#000" clear (click)="resetPassword()">Esqueceu sua senha ?</button>
+    <div class="hrLine"></div>
+    <button ion-button block class="facebookButton" clear (click)="enterFace()">
+      <ion-icon name="logo-facebook"></ion-icon>&nbsp; Entrar com o Facebook
+    </button>
+  </div>
+
+</ion-content>
+
+<ion-footer (click)="registerPage()">
+  <ion-toolbar style="text-align:center;color:#000">
+    Não tem uma conta ? <span style="color:#000">Cadastre-se</span>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+
+    <!-- <ion-segment [(ngModel)]="segment" (ionChange)="atualizarEventos()">
+      <ion-segment-button value="all">
+        Todos
+      </ion-segment-button>
+      <ion-segment-button value="favorites">
+        Favoritos
+      </ion-segment-button>
+    </ion-segment> -->
+
+
+      <ion-toolbar no-border>
+          <ion-searchbar color="primary"
+                         [(ngModel)]="queryText"
+                         (ionInput)="atualizarEventos()"
+                         placeholder="Search">
+          </ion-searchbar>
+        </ion-toolbar>
+
+    
+      <!--teste para pegar eventos de uma área de conhecimento só-->
+    <!--  <ion-buttons end>
+      <button ion-button icon-only (click)="presentFilter()">
+        <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+  </ion-navbar> 
+</ion-header>
+
+<ion-content>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  
+    <ion-list #idEventos [hidden]="shownSessions === 0">
+  
+      <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
+  
+        <ion-item-divider sticky>
+          <ion-label>{{group.time}}</ion-label>
+        </ion-item-divider>
+  
+        <ion-item-sliding *ngFor="let session of group.sessions" 
+                  #slidingItem [attr.track]="session.tracks[0] | lowercase" 
+                  [hidden]="session.hide">
+  
+           <button ion-item > <!-- TESTE (click)="goToSessionDetail(session)" -->
+            <h3>{{session.name}}</h3>
+            <p>{{session.timeStart}} &mdash; {{session.timeEnd}} : {{session.location}}</p>
+          </button>
+  
+          <!-- 
+            TESTE
+            <ion-item-options>
+            <button ion-button color="favorite" 
+                    (click)="addFavorite(slidingItem, session)" 
+                    *ngIf="segment === 'all'">Favoritar
+            </button>
+            <button ion-button color="danger" 
+                    (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" 
+                    *ngIf="segment === 'favorites'">Remover
+            </button>
+          </ion-item-options> -->
+  
+        </ion-item-sliding>
+  
+      </ion-item-group>
+  
+    </ion-list>
+  
+    <ion-list-header [hidden]="shownSessions > 0">
+       Nenhum Evento Encontrado
+    </ion-list-header>
+  
+  
+  </ion-content>
+

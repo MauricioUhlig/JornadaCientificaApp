@@ -1,0 +1,23 @@
+$categories: (
+ Biologia: #AC282B,
+ Pscologia: #8E8D93,
+ EngenhariaEletrica: #FE4C52,
+ Design: #FED035,
+ Medicina: #69BB7B,
+ Odonto: #3BC7C4,
+ Publicidade: #B16BE3,
+ Direito: #6600CC,
+);
+
+@function auxiliary-categories() {
+  @return map-remove($categories);
+}
+
+page-tabs-schedule {
+    @each $track, $value in auxiliary-categories() {
+        ion-item-sliding[track=#{$track}] ion-label {
+          border-left: 2px solid $value;
+          padding-left: 10px;
+        }
+    }
+}

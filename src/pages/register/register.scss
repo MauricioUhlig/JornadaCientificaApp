@@ -1,0 +1,42 @@
+.ios,.md,.wp{
+page-register {
+
+    .home-background {
+        background:url('../assets/imgs/jc_bgpattern.png') no-repeat fixed center; 
+        // background:url('../assets/imgs/bg-icons.png') no-repeat fixed center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        
+      }
+    //   .toolbar{background:none;}
+      .toolbar-background{ background:transparent; border-style:none;}
+      .toolbar::after,.header-md::after{ background-image:none;}
+      // ion-content{
+      //   background-color:color($colors,primary);
+      //    background-image:url('../assets/img/bg-style1.png');
+      //    background-size:100% auto;
+      // }
+      ion-item{
+        border-radius:8px;
+      }
+      ion-input{background:#fff}
+    
+      ion-item.item {
+        background-color: rgba(255, 255, 255, 0.144);
+        margin-bottom: 1px;
+        .label {
+          width: 10%;
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 1.2em;
+        }
+      }
+      .scroll-content { display: table; width: 100%; height: 100%;} 
+      .centerAlign { display: table-cell; vertical-align: middle;  }
+    
+      .item{border:$border-color 1px solid !important; margin-bottom:10px;background:#fff}
+     
+      .back-button{color:black}
+}
+
+}

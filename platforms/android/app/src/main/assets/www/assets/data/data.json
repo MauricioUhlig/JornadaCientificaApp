@@ -1,0 +1,243 @@
+{
+    "schedule": [{
+        "date": "2018-09-20",
+        "groups": [
+            {
+                "time": "8:00 h",
+                "sessions": [{
+                    "name": "Evento 1",
+                    "location": "Sala 101 ",
+                    "description": "Descrição do Evento ",
+                    "speakerNames": ["Palestrante (Nome)"],
+                    "timeStart": "8:00 h",
+                    "timeEnd": "9:00 h",
+                    "tracks": ["EngenhariaEletrica"],
+                    "id": "1"
+                }]
+            }, 
+            {
+                "time": "9:15 h",
+                "sessions": [
+                    {
+                        "name": "Evento 2",
+                        "location": "Sala 102 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "9:15 h",
+                        "timeEnd": "9:30 h",
+                        "tracks": ["Pscologia"],
+                        "id": "2"
+                    }, 
+                    {
+                        "name": "Evento 3",
+                        "location": "Sala 103 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "9:30 h",
+                        "timeEnd": "9:45 h",
+                        "tracks": ["Pscologia"],
+                        "id": "3"
+                    }, 
+                    {
+                        "name": "Evento 4",
+                        "location": "Sala 104 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "9:45 h",
+                        "timeEnd": "10:00 h",
+                        "tracks": ["Biologia"],
+                        "id": "4"
+                    }
+                ]
+            }, 
+            {
+                "time": "10:00 h",
+                "sessions": [
+                    {
+                        "name": "Evento 5",
+                        "location": "Sala 105 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "10:00 h",
+                        "timeEnd": "10:15 h",
+                        "tracks": ["Pscologia"],
+                        "id": "5"
+                    }, 
+                    {
+                        "name": "Evento 6",
+                        "location": "Sala 106 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "10:15 h",
+                        "timeEnd": "10:30 h",
+                        "tracks": ["Publicidade"],
+                        "id": "6"
+                    },
+                    {
+                        "name": "Evento 7",
+                        "location": "Sala 107 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "10:15 h",
+                        "timeEnd": "10:30 h",
+                        "tracks": ["Design"],
+                        "id": "7"
+                    }, 
+                    {
+                        "name": "Evento 8",
+                        "location": "Sala 108 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "10:45 h",
+                        "timeEnd": "11:00 h",
+                        "tracks": ["Odonto"],
+                        "id": "8"
+                    }
+                ]
+            }, 
+            {
+                "time": "11:00 h",
+                "sessions": [
+                    {
+                        "name": "Evento 9",
+                        "location": "Sala 109 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "11:00 h",
+                        "timeEnd": "11:45 h",
+                        "tracks": ["Biologia"],
+                        "id": "9"
+                    }, 
+                    {
+                        "name": "Evento 10",
+                        "location": "Sala 110 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "11:30 h",
+                        "timeEnd": "11:50 h",
+                        "tracks": ["Direito"],
+                        "id": "10"
+                    }, 
+                    {
+                        "name": "Evento 11",
+                        "location": "Sala 111 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "11:30 h",
+                        "timeEnd": "12:00 h",
+                        "tracks": ["Medicina"],
+                        "id": "11"
+                    }
+                ]
+            }, 
+            {
+                "time": "12:00 h",
+                "sessions": [
+                    {
+                        "name": "Evento 12",
+                        "location": "Sala 112 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "12:00 h",
+                        "timeEnd": "1:00 h",
+                        "tracks": ["EngenhariaEletrica"],
+                        "id": "12"
+                    }
+                ]
+            }, 
+            {
+                "time": "1:00 h",
+                "sessions": [
+                    {
+                        "name": "Evento 13",
+                        "location": "Sala 113 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "1:00 h",
+                        "timeEnd": "1:15 h",
+                        "tracks": ["Direito"],
+                        "id": "13"
+                    }, 
+                    {
+                        "name": "Evento 14",
+                        "location": "Sala 114 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)"],
+                        "timeStart": "1:15 h",
+                        "timeEnd": "1:30 h",
+                        "tracks": ["Direito"],
+                        "id": "14"
+                    },
+                    {
+                        "name": "Evento 15",
+                        "location": "Sala 115 ",
+                        "description": "Descrição do Evento ",
+                        "speakerNames": ["Palestrante (Nome)","Palestrante (Nome)"],
+                        "timeStart": "1:30 h",
+                        "timeEnd": "2:00 h",
+                        "tracks": ["Odonto"],
+                        "id": "15"
+                    }
+                ]
+            }, 
+            {
+                "time": "2:00 h",
+                "sessions": [{
+                    "name": "Evento 16",
+                    "location": "Sala 116 ",
+                    "description": "Descrição do Evento ",
+                "speakerNames": ["Palestrante (Nome)","Palestrante (Nome)"],
+                    "timeStart": "2:00 h",
+                    "timeEnd": "2:30 h",
+                    "tracks": ["Odonto"],
+                    "id": "16"
+                },
+                {
+                    "name": "Evento 17",
+                    "location": "Sala 117 ",
+                    "description": "Descrição do Evento ",
+                    "speakerNames": ["Palestrante (Nome)"," Palestrante (Nome)"],
+                    "timeStart": "2:30 h",
+                    "timeEnd": "2:45 h",
+                    "tracks": ["Direito"],
+                    "id": "17"
+                }, 
+                {
+                    "name": "Evento 18",
+                    "location": "Sala 118 ",
+                    "description": "Descrição do Evento ",
+                    "speakerNames": ["Palestrante (Nome)"," Palestrante (Nome)"],
+                    "timeStart": "2:45 h",
+                    "timeEnd": "3:00 h",
+                    "tracks": ["Design"],
+                    "id": "18"
+                }
+            ]
+        }, 
+        {
+            "time": "3:00",
+            "sessions": [
+                {
+                    "name": "Evento 19",
+                    "location": "Sala 119",
+                    "description": "Descrição do Evento ",
+                    "speakerNames": ["Palestrante (Nome)"],
+                    "timeStart": "3:00 h",
+                    "timeEnd": "3:30 h",
+                    "tracks": ["Publicidade"],
+                    "id": "19"
+                }, 
+                {
+                    "name": "Evento 20",
+                    "location": "Sala 120",
+                    "description": "Descrição do Evento ",
+                    "speakerNames": ["Palestrante (Nome)"],
+                    "timeStart": "3:30 h",
+                    "timeEnd": "3:45 h",
+                    "tracks": ["Medicina"],
+                    "id": "20"
+                }
+            ]
+        }]
+    }]
+}
