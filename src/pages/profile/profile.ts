@@ -26,13 +26,11 @@ export class ProfilePage {
     public toastCtrl:ToastController,
     private afauth:AngularFireAuth,
     private afDataBase:AngularFireDatabase,) {
-      if(this.type == ""){
-        this.type = "Aluno";
-        this.isFAESA = true;
-        this.isAluno = true;
-        this.isProfessor = false;
-        this.isVisitante = false;
-      }
+    this.type = "Aluno";
+    this.isFAESA = true;
+    this.isAluno = true;
+    this.isProfessor = false;
+    this.isVisitante = false;
     }
 
   openMenu() {
